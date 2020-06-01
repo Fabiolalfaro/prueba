@@ -1,0 +1,14 @@
+{
+  "tareas":[
+    {
+      "titulo": "Tarea 1",
+      "responsable": "Fabiola",
+      "descripcion": "Prueba"
+    },
+    {
+      "titulo": "Tarea 2",
+      "responsable": "Adriela",
+      "descripcion": "Parcial Sistemas Operativos"
+    }
+  ]
+}
