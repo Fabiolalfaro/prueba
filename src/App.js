@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { tareas } from './tareas.jason';
 
-function App() extends Component {
-  constructor(){
+import { tareas } from './tareas.json';
+
+class App extends Component {
+  constructor() {
     super();
     this.state = {
       tareas
@@ -16,11 +17,14 @@ function App() extends Component {
       return(
         <div className="col-md-4">
           <div className="card mt-4">
-            <div className="card-header">
+            <div className="card-title text-center">
               <h3>{tareas.titulo}</h3>
+              <span className="badge badge-pill badge-danger ml-2">
+                  {tareas.responsable}
+              </span>
             </div>
             <div className="card-body">
-              <p>{tareas.descripcion}</p>
+              {tareas.descripcion}
             </div>
           </div>
         </div>
@@ -32,12 +36,15 @@ function App() extends Component {
         <nav className="navbar navbar-dark bg-dark">
           <a href="" className="text-white">
             Tareas
+            <span className="badge badge-pill badge-light ml-2">
+              {this.state.tareas.length}
+            </span>
           </a>
         </nav>
 
         <div className="conteiner">
-          <div className="row mt-4">
-          { tareas }
+          <div className="row mt-8">
+          {tareas}
           </div>
         </div>
 
