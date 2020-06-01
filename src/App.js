@@ -18,13 +18,13 @@ class App extends Component {
         <div className="col-md-4">
           <div className="card mt-4">
             <div className="card-title text-center">
-              <h3>{tareas.titulo}</h3>
-              <span className="badge badge-pill badge-danger ml-2">
-                  {tareas.responsable}
+              <h3>{tarea.titulo}</h3>
+              <span className="badge badge-pill badge-primary ml-2">
+                  {tarea.responsable}
               </span>
             </div>
             <div className="card-body">
-              {tareas.descripcion}
+              {tarea.descripcion}
             </div>
           </div>
         </div>
